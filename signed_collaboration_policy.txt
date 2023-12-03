@@ -1,0 +1,19 @@
+        I have read and understood the following documents:
+
+          1. CS department's Policies and Procedures regarding Academic Honesty;
+          2. Columbia College and Columbia Engineeringâ€™s Academic Integrity website; and
+          3. The policies of this course.
+
+        I pledge that I will abide by the rules set forth by the documents, and
+        that I will accept the corresponding penalties if I fail to do so.
+
+        I also pledge that I will never post any Course Materials to public code
+        repositories or web sites like GitHub, CourseHero, etc., nor will I
+        share Course Materials privately with any person who may take the same
+        class in the future.  I understand Course Materials include, but are not
+        limited to, my own code, skeleton and solution code I received, lecture
+        notes, and exams and solutions.
+
+        Name: Zayd Hammour
+        UNI: zh2370
+        Date: 07/09/2023

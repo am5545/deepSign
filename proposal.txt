@@ -1,0 +1,35 @@
+Title: DeepSign: Restoring Trust in Digital Content
+Details:
+
+Team Members:
+
+Zayd Hammour (zh2370)
+Albaraa Mirdad (am5545)
+
+
+Pain Points Being Addressed:
+
+- Spread of misleading and deepfake content and misinformation on the internet.
+- The inability of consumers to verify the authenticity of digital media and statistical claims.
+- Challenges faced by organizations and individuals in asserting rights and authenticity over their content or endorsed statistics.
+
+
+How Your Project Addresses These Pain Points and Why Web3 is the Best Solution:
+
+Decentralization and Trustworthiness: DeepSign provides a decentralized platform ensuring that no single entity controls the authentication process, thus preventing potential bias or manipulation.
+Digital Signatures for Varied Content: Whether it's media content, statistical claims, or official statements, content creators and authoritative entities can digitally sign and authenticate their endorsements. This stamp of approval is then recorded on the blockchain.
+
+Public Key Verification: Consumers and users can cross-check the authenticity of a claim or piece of media against the public key of the endorsing entity, ensuring credibility.
+
+Tamper-Evident Ledger: Any modifications or attempts to falsify a signature or endorsement will be immediately noticeable, given blockchain's immutable nature.
+
+Why Web3: Web3 offers the necessary infrastructure for a transparent, decentralized verification system. In our misinformation-riddled age, its properties are paramount. A centralized system can be compromised, but with Web3, users can trust the authentication process's impartiality and reliability.
+
+
+Why Your Project is Unique/Different from Existing Solutions:
+
+Wide-Ranging Focus: DeepSign isn't limited to media content but extends its verification services to statistical claims, news, and official statements.
+
+Endorsements from Authoritative Sources: Unlike systems relying solely on crowd-sourced validation, DeepSign allows authoritative sources like WHO, NASA, or recognized experts to digitally sign and endorse information.
+
+Gap in the market: as of the time of writing, there have not been any tangible attempts at tackling misinformation and deepfakes via blockchain.

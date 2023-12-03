@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#tweetForm {
+    margin-bottom: 20px;
+}
+
+#tweetForm input, #tweetForm button {
+    margin-right: 10px;
+}
+
+#tweets {
+    margin-top: 20px;
+}
+
+.tweet {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}

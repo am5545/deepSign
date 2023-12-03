@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSign</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="web3.min.js"></script>
+    <script src="abi-decoder.js"></script>
+</head>
+<body>
+    <div id="accountSelector">
+        <label for="accounts">Choose Account:</label>
+        <select id="accounts"></select>
+    </div>
+    <div id="tweetForm">
+        <input type="text" id="tweetContent" placeholder="Your tweet">
+        <input type="text" id="mentionedAddress" placeholder="Mention address">
+        <button onclick="postTweet()">Post Tweet</button>
+    </div>
+    <div id="tweets">
+        <!-- Tweets will be listed here -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
