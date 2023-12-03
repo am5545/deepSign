@@ -151,7 +151,7 @@ function postTweet() {
     const content = document.getElementById('tweetContent').value;
     const mentioned = document.getElementById('mentionedAddress').value;
 
-    contract.methods.postTweet(content, mentioned).send({from: web3.eth.defaultAccount})
+    contract.methods.postTweet(content, mentioned).send({from: web3.eth.defaultAccount, gas: 300000})
         .then(() => {
             console.log('Tweet posted!');
             loadTweets();
@@ -161,7 +161,7 @@ function postTweet() {
 }
 
 function endorseTweet(tweetId) {
-    contract.methods.endorseTweet(tweetId).send({from: web3.eth.defaultAccount})
+    contract.methods.endorseTweet(tweetId).send({from: web3.eth.defaultAccount, gas: 300000})
         .then(() => {
             console.log('Tweet endorsed!');
             loadTweets();
