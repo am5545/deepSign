@@ -1,21 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
+#accountSelector {
+	margin-bottom: 20px;
 }
 
 #tweetForm {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-#tweetForm input, #tweetForm button {
-    margin-right: 10px;
+#allTweets, #mentionedTweets {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin-bottom: 20px;
 }
 
-#tweets {
-    margin-top: 20px;
+#allTweets h2, #mentionedTweets h2 {
+	background-color: #f5f5f5;
+	padding: 10px;
+	margin-top: 0;
+}
+
+#mentionedTweets {
+	background-color: #e9ffe9; /* Light green background for mentioned tweets */
 }
 
 .tweet {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	padding: 10px;
 }
+
+.tweet:last-child {
+	border-bottom: none;
+}
+
+.tweet button {
+	background-color: #4CAF50; /* Green background for buttons */
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.tweet button:hover {
+	background-color: #45a049;
+}
+
+/* Add additional styles here as needed */

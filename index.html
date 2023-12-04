@@ -9,6 +9,7 @@
     <script src="abi-decoder.js"></script>
 </head>
 <body>
+	<h1> DeepSign </h1>
     <div id="accountSelector">
         <label for="accounts">Choose Account:</label>
         <select id="accounts"></select>
@@ -18,8 +19,15 @@
         <input type="text" id="mentionedAddress" placeholder="Mention address">
         <button onclick="postTweet()">Post Tweet</button>
     </div>
-    <div id="tweets">
-        <!-- Tweets will be listed here -->
+		
+		<h2>All Tweets</h2>
+    <div id="allTweets">
+        <!-- All tweets will be listed here -->
+    </div>
+		
+		<h2>Mentioned Tweets</h2>
+    <div id="mentionedTweets">
+        <!-- Mentioned tweets for endorsement will be listed here -->
     </div>
 
     <script src="app.js"></script>
