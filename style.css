@@ -1,51 +1,127 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 20px;
+	line-height: 1.6;
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
 #accountSelector {
-	margin-bottom: 20px;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#accountSelector select {
+	font-size: 1rem;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: 2px solid #ddd;
+	outline: none;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 #tweetForm {
-	margin-bottom: 20px;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	margin-bottom: 2rem;
+}
+
+#tweetForm input[type=text] {
+	border: 2px solid #ddd;
+	border-radius: 20px;
+	padding: 15px;
+	margin: 10px 0;
+	width: calc(100% - 30px); /* Adjust width to account for padding */
+	box-sizing: border-box;
+}
+
+#tweetForm button {
+	background-color: #f0f0f0;
+	color: #333;
+	font-weight: bold;
+	border: 2px solid #ddd;
+	border-radius: 20px;
+	padding: 15px 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	outline: none;
+}
+
+#tweetForm button:hover {
+	background-color: #e2e2e2;
 }
 
 #allTweets, #mentionedTweets {
-	border: 1px solid #ddd;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-
-#allTweets h2, #mentionedTweets h2 {
-	background-color: #f5f5f5;
-	padding: 10px;
-	margin-top: 0;
-}
-
-#mentionedTweets {
-	background-color: #e9ffe9; /* Light green background for mentioned tweets */
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	margin-bottom: 2rem;
 }
 
 .tweet {
 	border-bottom: 1px solid #eee;
-	padding: 10px;
+	padding: 10px 0;
+	transition: background-color 0.3s ease;
 }
 
-.tweet:last-child {
-	border-bottom: none;
+.tweet-endorsed {
+	background-color: #e7f5eb; /* Subtle green for endorsed tweets */
+}
+
+.tweet-not-endorsed {
+	background-color: #fdf7f7; /* Subtle red/pinkish for not endorsed tweets */
+}
+
+.tweet p {
+	margin: 0;
 }
 
 .tweet button {
-	background-color: #4CAF50; /* Green background for buttons */
-	color: white;
-	padding: 10px 15px;
+	background-color: #f0f0f0;
+	color: #555;
 	border: none;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
+	border-radius: 15px;
+	padding: 10px 20px;
+	margin-right: 10px;
 	cursor: pointer;
+	transition: all 0.3s ease;
+	outline: none;
 }
 
 .tweet button:hover {
-	background-color: #45a049;
+	background-color: #e2e2e2;
 }
 
-/* Add additional styles here as needed */
+.tweet button.ignore {
+	background-color: #f0f0f0;
+	color: #777;
+}
+
+.tweet button.ignore:hover {
+	background-color: #e2e2e2;
+}
+
+@media (max-width: 768px) {
+	#tweetForm {
+			flex-direction: column;
+			align-items: center;
+	}
+
+	#tweetForm input[type=text], 
+	#tweetForm button {
+			width: 100%;
+			margin: 5px 0;
+	}
+}

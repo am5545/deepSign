@@ -18,20 +18,26 @@ contract DeepSign {
     }
     
     function postTweet(string calldata _content, address _mentioned) external {
-        tweets.push(Tweet({
+        Tweet memory newTweet = Tweet({
             content: _content,
             author: msg.sender,
             mentioned: _mentioned,
             isEndorsed: false
-        }));
-        mentions[_mentioned].push(tweets.length - 1);
+        });
+
+        tweets.push(newTweet);
+        
+        // If a mentioned address is provided, add the tweet to their mentions
+        if(_mentioned != address(0)) {
+            mentions[_mentioned].push(tweets.length - 1);
+        }
     }
+
 
     function endorseTweet(uint _tweetId) external {
         require(tweets[_tweetId].mentioned == msg.sender, "Only the mentioned user can endorse.");
         tweets[_tweetId].isEndorsed = true;
     }
-
     function getMentionedTweets(address user) public view returns (Tweet[] memory) {
         uint[] memory mentionedIndices = mentions[user];
         Tweet[] memory userMentions = new Tweet[](mentionedIndices.length);
